@@ -1,12 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9dd8fd0e-69fe-41c8-94a8-67716cf46ec3" name="Default Changelist" comment="" />
+    <list default="true" id="9dd8fd0e-69fe-41c8-94a8-67716cf46ec3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Solution/src/LeetCode/num_76/MainClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/LeetCode/LeetCode/Test_01/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/LeetCode/LeetCode/Test_01/Solution$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/LeetCode/LeetCode/Test_01/Solution$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/LeetCode/LeetCode/Test_01/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/LeetCode/LeetCode/temp/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Solution/out/production/LeetCode/LeetCode/temp/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/LeetCode/LeetCode/temp/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/Solution/out/production/LeetCode/LeetCode/temp/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/AcWing/num_57/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/AcWing/nums_65/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/AcWing/nums_65/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/Test_01/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/Test_01/Solution$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/Test_01/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/Weekly_Contest_104/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/Weekly_Contest_104/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/Weekly_Contest_105/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/Weekly_Contest_105/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/Weekly_Contest_107/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/Weekly_Contest_107/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/Weekly_Contest_108/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/Weekly_Contest_108/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_123/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_123/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_128/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_128/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_17/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_17/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_206/ListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_206/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_206/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_297/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_297/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_297/TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_300/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_300/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_301/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_301/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_394/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_394/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_42/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_42/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_46/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_46/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_53/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_53/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_690/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_690/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_695/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_695/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_72/MainCalss.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_72/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_784/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_829/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_829/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_889/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_889/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_889/TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_897/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_897/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_897/TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_967/MainClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/num_967/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/temp/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/LeetCode/temp/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/META-INF/Solution.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/nowcoder/monthlyTest3_1/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/nowcoder/monthlyTest3_2/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/nowcoder/toutiao_1/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/out/production/Solution/nowcoder/toutiao_2/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/src/LeetCode/Test_01/MainClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Solution/src/nowcoder/toutiao_2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Solution/src/nowcoder/toutiao_2/Main.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -22,11 +99,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Solution/src/LeetCode/temp/Main.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Solution/src/LeetCode/num_42/MainClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            <state relative-caret-position="296">
+              <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Solution/src/nowcoder/toutiao_2/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="44" column="2" selection-start-line="44" selection-start-column="2" selection-end-line="44" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -49,13 +135,17 @@
         <option value="$PROJECT_DIR$/Solution/src/LeetCode/num_17/MainClass.java" />
         <option value="$PROJECT_DIR$/Solution/src/LeetCode/num_300/MainClass.java" />
         <option value="$PROJECT_DIR$/Solution/src/LeetCode/temp/Main.java" />
+        <option value="$PROJECT_DIR$/Solution/src/LeetCode/num_76/MainClass.java" />
+        <option value="$PROJECT_DIR$/Solution/src/LeetCode/num_42/MainClass.java" />
+        <option value="$PROJECT_DIR$/Solution/src/nowcoder/toutiao_2/Main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="773" />
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="1853" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -63,22 +153,48 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="LeetCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode_Debug" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode_Debug" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeetCode_Debug" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode_Debug" type="462c0819:PsiDirectoryNode" />
+              <item name="Solution" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeetCode_Debug" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode_Debug" type="462c0819:PsiDirectoryNode" />
+              <item name="Solution" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeetCode_Debug" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode_Debug" type="462c0819:PsiDirectoryNode" />
+              <item name="Solution" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LeetCode_Debug" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LeetCode_Debug" type="462c0819:PsiDirectoryNode" />
+              <item name="Solution" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="nowcoder" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552114369524" />
@@ -102,7 +218,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="nowcoder.toutiao_2.Main" />
+      <module name="LeetCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nowcoder.toutiao_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LeetCode.temp.Main" />
       <module name="LeetCode" />
@@ -131,6 +260,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.MainClass" />
       </list>
@@ -149,16 +279,18 @@
       <workItem from="1552020884842" duration="2376000" />
       <workItem from="1552061707854" duration="6817000" />
       <workItem from="1552358337967" duration="245000" />
+      <workItem from="1553924635112" duration="3235000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9438000" />
+    <option name="totallyTimeSpent" value="12673000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="773" extended-state="0" />
+    <frame x="65" y="24" width="1853" height="1048" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25767368" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26094183" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -167,7 +299,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32892805" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32838982" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39941263" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -218,24 +350,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/src.zip!/java/util/Arrays.java" />
+    <entry file="file://$PROJECT_DIR$/Solution/src/LeetCode/Test_01/MainClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1738">
+          <caret line="80" column="13" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Solution/src/LeetCode/num_17/MainClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        <state relative-caret-position="406">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
+    <entry file="file://$PROJECT_DIR$/Solution/src/LeetCode/Weekly_Contest_104/MainClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="1916" column="16" lean-forward="true" selection-start-line="1916" selection-start-column="16" selection-end-line="1916" selection-end-column="16" />
-          <folding>
-            <element signature="e#88329#88330#0" expanded="true" />
-            <element signature="e#88386#88387#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="321">
+          <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Solution/src/LeetCode/temp/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2386">
+          <caret line="167" column="13" selection-start-line="167" selection-start-column="13" selection-end-line="167" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -249,10 +392,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Solution/src/LeetCode/temp/Main.java">
+    <entry file="file://$PROJECT_DIR$/Solution/src/LeetCode/num_76/MainClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state relative-caret-position="66">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Solution/src/LeetCode/num_42/MainClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Solution/src/nowcoder/toutiao_2/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="44" column="2" selection-start-line="44" selection-start-column="2" selection-end-line="44" selection-end-column="2" />
         </state>
       </provider>
     </entry>
