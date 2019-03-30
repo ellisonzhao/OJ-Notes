@@ -44,7 +44,7 @@ class Solution {
 
 public class MainClass {
     public static void main(String[] args) {
-//        String[] emails = {"test.email+alex@leetcode.com", "test.e.mail+bob.cathy@leetcode.com", "testemail+david@lee.tcode.com"};
+//        String[] emails = {"monthlyTest3_1.email+alex@leetcode.com", "monthlyTest3_1.e.mail+bob.cathy@leetcode.com", "testemail+david@lee.tcode.com"};
 //        System.out.println(new Solution().numUniqueEmails(emails));
         int[] A = {1, 0, 1, 1, 0, 1};
         int S = 2;
