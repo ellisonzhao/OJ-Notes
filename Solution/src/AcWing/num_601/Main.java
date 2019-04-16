@@ -20,17 +20,45 @@ public class Main {
         return output;
     }
 
+    private static int m;
+    private static int n;
+    private static int[] coins;
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int[] firstLine = stringToIntegerArray(br.readLine());
-        int m = firstLine[0];
-        int n = firstLine[1];
-        int[] nums = new int[n];
+        m = firstLine[0];
+        n = firstLine[1];
+        coins = new int[n + 1];
         for (int i = 0; i < n; ++i) {
             String part = br.readLine().trim();
-            nums[i] = Integer.parseInt(part);
+            coins[i] = Integer.parseInt(part);
         }
-        Arrays.sort(nums);
+        //　细节处理,　
+        Arrays.sort(coins, 0, n - 1);
+        while (n > 0 && coins[n - 1] > m) {
+            --n;
+        }
+        // 要凑出[1,m]区间内所有值
+        //保证n之前都是小于等于m的硬币
+        coins[n] = m + 1;
+        if (coins[0] != 1) {
+            System.out.println(-1);
+        } else {
+            int res = 0;
+            int sum = 0;
+            for (int i = 0; i < n; ++i) {
+                // 用尽可能多的coins[i]凑到接近coins[i+1]
+                // 如果要凑coins[i]只需要１个硬币,所以考虑凑到coins[i+1]-1
+                // sum: 已有的硬币数量凑出的值
+                // sum + coins[i]*k >= coins[i+1]-1
+                // 于是得到k: coins[i+1]-1-sum 对coins[i]上取整
+                int k = (coins[i + 1] - 1 - sum + coins[i] - 1) / coins[i];
+                res += k;
+                sum += k * coins[i];
+            }
+            System.out.println(res);
+        }
 
     }
 }
