@@ -7,6 +7,16 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
+class TreeNode {
+    TreeNode left;
+    int val;
+    TreeNode right;
+
+    TreeNode(int x) {
+        val = x;
+    }
+
+}
 
 class Solution {
     public TreeNode increasingBST(TreeNode root) {

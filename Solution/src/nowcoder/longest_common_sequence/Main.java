@@ -51,10 +51,33 @@ public class Main {
         return max;
     }
 
+    public int longestCommonSubsequence(String A, String B) {
+        // write your code here
+        if (A == null || B == null || A.length() == 0 || B.length() == 0)
+            return 0;
+        int n = A.length();
+        int m = B.length();
+        char[] a = A.toCharArray();
+        char[] b = B.toCharArray();
+        int res = 0;
+        int[][] dp = new int[n + 1][m + 1];
+        for (int i = 1; i <= n; ++i) {
+            for (int j = 1; j <= m; ++j) {
+                if (a[i - 1] == b[j - 1]) {
+                    dp[i][j] = 1 + dp[i - 1][j - 1];
+                } else {
+                    dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+                }
+                res = Math.max(res, dp[i][j]);
+            }
+        }
+        return res;
+    }
+
+
     public static void main(String[] args) {
-        String A = "cacccca", B = "aaacca";
-        int n = 7, m = 6;
-        System.out.println(findLongest(A, n, B, m));
-        System.out.println(findLongestCorrect(A, n, B, m));
+        String A = "tysoklr", B = "slvo";
+        int n = 7, m = 4;
+        System.out.println();
     }
 }

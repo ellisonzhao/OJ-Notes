@@ -8,6 +8,17 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Queue;
 
+class TreeNode {
+    TreeNode left;
+    int val;
+    TreeNode right;
+
+    TreeNode(int x) {
+        val = x;
+    }
+
+}
+
 class Solution {
     public TreeNode constructFromPrePost(int[] preorder, int[] postorder) {
         Deque<TreeNode> dq = new ArrayDeque<>();
