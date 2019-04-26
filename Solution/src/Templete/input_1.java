@@ -1,21 +1,16 @@
-package temp.test01;
-
-/**
- * @author charlsonz
- * @date 2019-04-10 21:58
- */
+package Templete;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Main {
+/**
+ * @author charlsonz
+ * @date 2019-04-23 22:49
+ */
+public class input_1 {
     private static int[] stringToIntegerArray(String input) {
-        input = input.trim();
-        if (input.length() == 0) {
-            return new int[0];
-        }
-        String[] parts = input.split(" ");
+        String[] parts = input.trim().split(" ");
         int[] output = new int[parts.length];
         for (int index = 0; index < parts.length; index++) {
             String part = parts[index].trim();
@@ -24,8 +19,16 @@ public class Main {
         return output;
     }
 
-
+    // 不固定行数输入
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        while (true) {
+            String line = br.readLine();
+            if (line == null || line.length() == 0)
+                break;
+            int[] parts = stringToIntegerArray(line);
+            for (int part : parts)
+                System.out.println(part);
+        }
     }
 }
