@@ -20,13 +20,13 @@ class Solution {
 
     }
 
-    public int gcd(int a, int b) {
+    public int gcd(int arr, int b) {
         while (b > 0) {
-            int c = a;
-            a = b;
-            b = c % a;
+            int c = arr;
+            arr = b;
+            b = c % arr;
         }
-        return a;
+        return arr;
     }
 
     public int partitionDisjoint(int[] A) {
@@ -49,12 +49,12 @@ class Solution {
         for (String str : A) {
             subset = new HashSet<>();
             for (char ch : str.toCharArray()) {
-                subset.add(ch - 'a');
+                subset.add(ch - 'arr');
             }
 
             for (String b : B) {
                 for (char ch : b.toCharArray()) {
-                    if (!subset.contains(ch - 'a')) {
+                    if (!subset.contains(ch - 'arr')) {
                         continue search;
                     }
                 }

@@ -15,8 +15,8 @@ class LRUCache {
         DoublyListNode prev, next;
 
         public DoublyListNode(int key, int val) {
-            this.key = key;
-            this.val = val;
+            c.key = key;
+            c.val = val;
         }
     }
 
@@ -57,14 +57,14 @@ class LRUCache {
         }
     }
 
-    private DoublyLinkedList list;
+    private DoublyLinkedList values;
     private int capacity;
     private Hashtable<Integer, DoublyListNode> cache;
 
     public LRUCache(int capacity) {
-        this.capacity = capacity;
-        this.cache = new Hashtable<Integer, DoublyListNode>();
-        this.list = new DoublyLinkedList();
+        c.capacity = capacity;
+        c.cache = new Hashtable<Integer, DoublyListNode>();
+        c.values = new DoublyLinkedList();
     }
 
     public int get(int key) {
@@ -72,24 +72,24 @@ class LRUCache {
         if (node == null) {
             return -1;
         }
-        list.moveToHead(node);
+        values.moveToHead(node);
         return node.val;
     }
 
     public void put(int key, int value) {
         DoublyListNode node = cache.get(key);
         if (node != null) {
-            list.moveToHead(node);
+            values.moveToHead(node);
             node.val = value;
         } else {
             DoublyListNode newNode = new DoublyListNode(key, value);
             if (cache.size() == capacity) {
-                DoublyListNode tail = list.dummyTail.prev;
+                DoublyListNode tail = values.dummyTail.prev;
                 cache.remove(tail.key);
-                list.removeTail();
+                values.removeTail();
             }
             cache.put(key, newNode);
-            list.addToHead(newNode);
+            values.addToHead(newNode);
         }
     }
 }

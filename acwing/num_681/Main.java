@@ -55,25 +55,25 @@ public class Main {
 
     }
 
-    private static int[] q = new int[N]; //数组表示队列,存放顶点
+    private static int[] queue = new int[N]; //数组表示队列,存放顶点
 
     // 标志数组, 值为true表示顶点已经访问
     private static boolean[] visited = new boolean[N];
 
     private static int bfs(int u) {
-        q[0] = u;
+        queue[0] = u;
         visited[u] = true;
         int front = 0; // 队头
         int rear = 0; // 队尾
         // 跟循环队列区别
         while (front <= rear) {
-            int t = q[front++]; // 出队
+            int t = queue[front++]; // 出队
             // 对顶点t 进行bfs
             for (int i = first[t]; i != -1; i = next[i]) {
                 // 从最新添加的边一直遍历到 idx = -1
                 int v = edge[i];
                 if (!visited[v]) {
-                    q[++rear] = v;
+                    queue[++rear] = v;
                     visited[v] = true;
                 }
             }
@@ -104,13 +104,13 @@ public class Main {
             add(v, u);
         }
 
-        int res = 0;
+        int values = 0;
         visited[1] = true;
         for (int i = first[1]; i != -1; i = next[i]) {
             // 对从顶点1出发所有边对应的终点进行遍历
-            res = Math.max(res, bfs(edge[i]));
+            values = Math.max(values, bfs(edge[i]));
         }
-        System.out.println(res);
+        System.out.println(values);
 
     }
 }

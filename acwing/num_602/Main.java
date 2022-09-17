@@ -28,7 +28,7 @@ public class Main {
             else
                 zeros++;
         }
-        int res = Math.abs(ones - zeros);
-        System.out.println(res);
+        int values = Math.abs(ones - zeros);
+        System.out.println(values);
     }
 }

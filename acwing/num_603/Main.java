@@ -56,13 +56,13 @@ public class Main {
             }
         }
 
-        int res = 0;
+        int values = 0;
         for (int i = 1; i <= 2 * N; ++i) {
             if (dp[N][i] != -1) {
-                res = i;
+                values = i;
                 break;
             }
         }
-        System.out.println(res);
+        System.out.println(values);
     }
 }

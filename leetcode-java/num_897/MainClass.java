@@ -25,10 +25,10 @@ class Solution {
 
     public TreeNode helper(TreeNode root, TreeNode tail) {
         if (root == null) return tail;
-        TreeNode res = helper(root.left, root);
+        TreeNode values = helper(root.left, root);
         root.left = null;
         root.right = helper(root.right, tail);
-        return res;
+        return values;
     }
 
 

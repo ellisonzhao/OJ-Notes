@@ -59,8 +59,8 @@ public class Main {
             System.out.println(-1);
         } else {
             int[] nums = stringToIntegerArray(br.readLine());
-            int res = minWindow(nums, m);
-            System.out.println(res);
+            int values = minWindow(nums, m);
+            System.out.println(values);
         }
     }
 }

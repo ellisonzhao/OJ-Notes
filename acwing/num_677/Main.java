@@ -9,14 +9,14 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine().trim());
         n = 1024 - n;
-        int res = 0;
+        int values = 0;
 
         int[] coins = {64, 16, 4, 1};
         for (int i = 0; i < 4; ++i) {
-            res += n / coins[i];
+            values += n / coins[i];
             n = n % coins[i];
         }
 
-        System.out.println(res);
+        System.out.println(values);
     }
 }

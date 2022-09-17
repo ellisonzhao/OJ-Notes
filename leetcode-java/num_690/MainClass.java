@@ -4,9 +4,9 @@ import java.util.*;
 
 class Employee {
     // It's the unique id of each node;
-    // unique id of this employee
+    // unique id of c employee
     public int id;
-    // the importance value of this employee
+    // the importance value of c employee
     public int importance;
     // the id of direct subordinates
     public List<Integer> subordinates;

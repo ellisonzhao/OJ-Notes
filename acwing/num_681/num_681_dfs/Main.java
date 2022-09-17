@@ -95,15 +95,15 @@ public class Main {
         }
 
         dfs(1);
-        int res = 0;
+        int values = 0;
         // 对结点 1 的所有孩子结点进行 dfs
         for (int i = first[1]; i != -1; i = next[i]) {
             // i: 边的编号
             int u = edge[i];
             // 对从顶点1出发所有边对应的终点进行遍历
-            res = Math.max(res, state[u]);
+            values = Math.max(values, state[u]);
         }
-        System.out.println(res);
+        System.out.println(values);
 
     }
 }

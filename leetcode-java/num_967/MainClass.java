@@ -5,15 +5,15 @@ import java.util.*;
 
 class Solution {
     public int[] numsSameConsecDiff(int N, int K) {
-        Queue<String> q = new LinkedList<>();
-        Set<String> res = new HashSet<>();
+        Queue<String> queue = new LinkedList<>();
+        Set<String> values = new HashSet<>();
         for (int i = 0; i <= 9; ++i) {
-            q.add(String.valueOf(i));
+            queue.add(String.valueOf(i));
         }
-        while (!q.isEmpty()) {
-            String temp = q.poll();
+        while (!queue.isEmpty()) {
+            String temp = queue.poll();
             if (temp.length() == N) {
-                res.add(temp);
+                values.add(temp);
                 continue;
             } else {
                 char first = temp.charAt(0);
@@ -23,19 +23,19 @@ class Solution {
                 char c = temp.charAt(temp.length() - 1);
                 int lastDegit = c - '0';
                 if (lastDegit - K >= 0 && lastDegit - K <= 9) {
-                    q.add(temp + (lastDegit - K));
+                    queue.add(temp + (lastDegit - K));
                 }
                 if (lastDegit + K >= 0 && lastDegit + K <= 9) {
-                    q.add(temp + (lastDegit + K));
+                    queue.add(temp + (lastDegit + K));
                 }
 
             }
         }
 
-        List<String> list = new ArrayList<>(res);
-        int[] ans = new int[list.size()];
-        for (int i = 0; i < list.size(); i++) {
-            ans[i] = Integer.valueOf(list.get(i));
+        List<String> values = new ArrayList<>(values);
+        int[] ans = new int[values.size()];
+        for (int i = 0; i < values.size(); i++) {
+            ans[i] = Integer.valueOf(values.get(i));
         }
         return ans;
     }
@@ -45,8 +45,8 @@ class Solution {
 public class MainClass {
     public static void main(String[] args) {
         int ans[] = new Solution().numsSameConsecDiff(2, 0);
-        for (int a : ans) {
-            System.out.println(a);
+        for (int arr : ans) {
+            System.out.println(arr);
         }
     }
 }

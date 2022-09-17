@@ -13,21 +13,21 @@ class Solution {
         }
         String[] dict = new String[]{"0", "1", "abc", "def", "ghi",
                 "jkl", "mno", "pqrs", "tuv", "wxyz"};
-        Queue<String> q = new LinkedList<>();
-        q.add("");
+        Queue<String> queue = new LinkedList<>();
+        queue.add("");
         for (int i = 0; i < digits.length(); i++) {
             int digit = digits.charAt(i) - '0';
-            int size = q.size();
+            int size = queue.size();
             for (int j = 0; j < size; j++) {
-                String temp = q.poll();
+                String temp = queue.poll();
                 for (int k = 0; k < dict[digit].length(); k++) {
-                    q.add(temp + dict[digit].charAt(k));
+                    queue.add(temp + dict[digit].charAt(k));
                 }
             }
         }
-        while (!q.isEmpty()) {
-            ans.add(q.peek());
-            q.poll();
+        while (!queue.isEmpty()) {
+            ans.add(queue.peek());
+            queue.poll();
         }
         return ans;
     }

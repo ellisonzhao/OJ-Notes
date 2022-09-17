@@ -8,7 +8,7 @@ import java.util.List;
 
 class Solution {
     public int consecutiveNumbersSum(int sum) {
-        List<List<Integer>> res = new ArrayList<>();
+        List<List<Integer>> values = new ArrayList<>();
         int k = ((sum & 1) == 0 ? 0 : 1) + sum / 2, curSum = 0;
         List<Integer> temp = new ArrayList<>();
         for (int i = 1; i <= k; i++) {
@@ -21,10 +21,10 @@ class Solution {
                 temp.remove(0);
             }
             if (curSum == sum) {
-                res.add(new ArrayList<>(temp));
+                values.add(new ArrayList<>(temp));
             }
         }
-        return res.size();
+        return values.size();
     }
 }
 

@@ -15,7 +15,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int M = Integer.parseInt(br.readLine().trim());
-        int res = 0;
+        int values = 0;
         // 记录特征出现次数
         Map<String, Integer> frequencyMap = new HashMap<>();
 
@@ -55,11 +55,11 @@ public class Main {
                     frequencyMap.put(pair, 1);
                 }
                 previousMap.put(pair, m);
-                res = Math.max(res, frequencyMap.get(pair));
+                values = Math.max(values, frequencyMap.get(pair));
             }
         }
 
-        System.out.println(res);
+        System.out.println(values);
 
     }
 }

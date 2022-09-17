@@ -43,7 +43,7 @@ public class Main {
         if (coins[0] != 1) {
             System.out.println(-1);
         } else {
-            int res = 0;
+            int values = 0;
             int sum = 0;
             for (int i = 0; i < n; ++i) {
                 // 用尽可能多的coins[i]凑到接近coins[i+1]
@@ -52,10 +52,10 @@ public class Main {
                 // sum + coins[i]*k >= coins[i+1]-1
                 // 于是得到k: coins[i+1]-1-sum 对coins[i]上取整
                 int k = (coins[i + 1] - 1 - sum + coins[i] - 1) / coins[i];
-                res += k;
+                values += k;
                 sum += k * coins[i];
             }
-            System.out.println(res);
+            System.out.println(values);
         }
 
     }

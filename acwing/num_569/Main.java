@@ -75,16 +75,16 @@ public class Main {
                 int p = primes[i];
                 powers[i] += getCountOfPrime(n, p) - getCountOfPrime(s, p) - getCountOfPrime(n - s, p);
             }
-            long res = 1;
+            long values = 1;
             for (int i = 0; i < COUNT; ++i) {
                 int p = primes[i];
                 while (powers[i]-- > 0)
-                    res = res * p % MOD;
+                    values = values * p % MOD;
             }
             for (int i = 0; i < n - s; i++) {
-                res = (res << 1) % MOD;
+                values = (values << 1) % MOD;
             }
-            System.out.println(res);
+            System.out.println(values);
         }
     }
 }

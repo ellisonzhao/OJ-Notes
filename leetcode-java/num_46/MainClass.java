@@ -69,8 +69,8 @@ public class MainClass {
 
     public static String int2dListToString(List<List<Integer>> nums) {
         StringBuilder sb = new StringBuilder("[");
-        for (List<Integer> list : nums) {
-            sb.append(integerArrayListToString(list));
+        for (List<Integer> values : nums) {
+            sb.append(integerArrayListToString(values));
             sb.append(",");
         }
 

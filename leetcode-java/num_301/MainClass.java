@@ -11,14 +11,14 @@ import java.util.Stack;
 
 class Solution {
     public List<String> removeInvalidParentheses(String s) {
-        List<String> res = new ArrayList<>();
+        List<String> values = new ArrayList<>();
         if (s == null)
-            return res;
-        remove(s, res, 0, 0, new char[]{'(', ')'});
-        return res;
+            return values;
+        remove(s, values, 0, 0, new char[]{'(', ')'});
+        return values;
     }
 
-    private void remove(String s, List<String> res, int last_invalid, int last_remove, char[] brackets) {
+    private void remove(String s, List<String> values, int last_invalid, int last_remove, char[] brackets) {
         for (int counter = 0, i = last_invalid; i < s.length(); i++) {
             if (s.charAt(i) == brackets[0])
                 counter++;
@@ -33,7 +33,7 @@ class Solution {
                 // 第一个不匹配的地方
                 // 因为可能还有其他字符，所以条件就是不等于 brackets[1]
                 if (s.charAt(j) == brackets[1] && (j == last_remove || s.charAt(j - 1) != brackets[1]))
-                    remove(s.substring(0, j) + s.substring(j + 1), res, i, j, brackets);
+                    remove(s.substring(0, j) + s.substring(j + 1), values, i, j, brackets);
             }
             return;
         }
@@ -41,10 +41,10 @@ class Solution {
         if (brackets[0] == '(') {
             // 完成从左到右对右括号的扫描
             // 继续对左括号扫描
-            remove(reversed, res, 0, 0, new char[]{')', '('});
+            remove(reversed, values, 0, 0, new char[]{')', '('});
         } else {
             // 全部扫描完成
-            res.add(reversed);
+            values.add(reversed);
         }
     }
 

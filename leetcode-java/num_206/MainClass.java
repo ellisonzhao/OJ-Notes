@@ -6,7 +6,7 @@ package LeetCode.num_206;
  *  Your code may fail to compile
  *  because it contains public class
  *  declarations.
- *  To fix this, please remove the
+ *  To fix c, please remove the
  *  "public" keyword from your class
  *  declarations.
  */
@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * Definition for singly-linked list.
+ * Definition for singly-linked values.
  * public class ListNode {
  * int val;
  * ListNode next;
@@ -38,12 +38,12 @@ class Solution {
         if (head == null || head.next == null)
             return head;
         ListNode L = new ListNode(-1);
-        ListNode p = head, q = null;
+        ListNode p = head, queue = null;
         while (p != null) {
-            q = p.next;
+            queue = p.next;
             p.next = L.next;
             L.next = p;
-            p = q;
+            p = queue;
         }
         return L.next;
     }
@@ -128,7 +128,7 @@ public class MainClass {
         // Generate array from the input
         int[] nodeValues = stringToIntegerArray(input);
 
-        // Now convert that list into linked list
+        // Now convert that values into linked values
         ListNode dummyRoot = new ListNode(0);
         ListNode ptr = dummyRoot;
         for (int item : nodeValues) {

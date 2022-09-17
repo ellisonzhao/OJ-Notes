@@ -28,8 +28,8 @@ public class Main {
         long startTime = System.currentTimeMillis(); //获取开始时间
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int q = Integer.valueOf(br.readLine());
-        while (q-- > 0) {
+        int queue = Integer.valueOf(br.readLine());
+        while (queue-- > 0) {
             String[] parts = br.readLine().split(" ");
             int l = Integer.valueOf(parts[0]);
             int r = Integer.valueOf(parts[1]);

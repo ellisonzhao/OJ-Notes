@@ -48,18 +48,18 @@ public class Main {
             }
         }
 
-        int res = 0;
+        int values = 0;
         for (int i = 0; i < rows; ++i) {
             for (int j = 0; j < cols; ++j) {
                 if (grid[i][j] == 1) {
                     if (time[i][j] == -1) {
                         return -1;
                     }
-                    res = Math.max(res, time[i][j]);
+                    values = Math.max(values, time[i][j]);
                 }
             }
         }
-        return res;
+        return values;
     }
 
     public static void main(String[] args) throws IOException {

@@ -24,19 +24,19 @@ class Solution {
         if (l1 == 0) return l2;
         if (l2 == 0) return l1;
         if (dp[l1][l2] >= 0) return dp[l1][l2];
-        int res;
+        int values;
         if (word1.charAt(l1 - 1) == word2.charAt(l2 - 1)) {
-            res = minDistance(word1, word2, l1 - 1, l2 - 1);
+            values = minDistance(word1, word2, l1 - 1, l2 - 1);
         } else {
             // 插入一个字符:l1,l2-1
             // 删除最后一个字符:l1-1, l2
             // 替换最后一个字符: l1-1,l2-1
-            res = 1 + Math.min(minDistance(word1, word2, l1 - 1, l2 - 1),
+            values = 1 + Math.min(minDistance(word1, word2, l1 - 1, l2 - 1),
                     Math.min(minDistance(word1, word2, l1 - 1, l2), minDistance(word1, word2,
                             l1, l2 - 1)));
         }
-        dp[l1][l2] = res;
-        return res;
+        dp[l1][l2] = values;
+        return values;
     }
 }
 

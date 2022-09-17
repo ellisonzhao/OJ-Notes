@@ -8,7 +8,7 @@ class Solution {
             return s;
         Stack<String> resultStack = new Stack<>();
         Stack<Integer> timesStack = new Stack<>();
-        String res = "";
+        String values = "";
         int index = 0;
         while (index < s.length()) {
             if (Character.isDigit(s.charAt(index))) {
@@ -22,25 +22,25 @@ class Solution {
             } else if (s.charAt(index) == '[') {
                 //前面的中间结果String入栈保存
                 // 并且会有新的中间结果String
-                resultStack.push(res);
-                res = "";
+                resultStack.push(values);
+                values = "";
                 index++;
             } else if (s.charAt(index) == ']') {
                 // 计算拼接字符串
                 StringBuilder sb = new StringBuilder(resultStack.pop());
                 int repeatTimes = timesStack.pop();
                 for (int i = 0; i < repeatTimes; i++) {
-                    sb.append(res);
+                    sb.append(values);
                 }
-                res = sb.toString();
+                values = sb.toString();
                 index++;
             } else {
                 // 中间结果String
-                res += s.charAt(index);
+                values += s.charAt(index);
                 index++;
             }
         }
-        return res;
+        return values;
     }
 }
 
