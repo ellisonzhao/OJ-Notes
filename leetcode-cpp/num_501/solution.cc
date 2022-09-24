@@ -1,10 +1,10 @@
 class Solution {
- public:
+public:
   int maxCount;
   int count;
   vector<int> result;
-  TreeNode* prev;
-  vector<int> findMode(TreeNode* root) {
+  TreeNode *prev;
+  vector<int> findMode(TreeNode *root) {
     count = 0;
     maxCount = 0;
     prev == nullptr;
@@ -13,7 +13,7 @@ class Solution {
 
     return result;
   }
-  void search(TreeNode* curr) {
+  void search(TreeNode *curr) {
     if (curr == nullptr) {
       return;
     }

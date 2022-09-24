@@ -1,5 +1,5 @@
 class Solution {
- public:
+public:
   vector<vector<int>> kSmallestPairs(vector<int> &nums1, vector<int> &nums2,
                                      int k) {
     int n1 = nums1.size(), n2 = nums2.size();
@@ -22,7 +22,8 @@ class Solution {
       pq.pop();
       ans.push_back({nums1[i], nums2[j]});
 
-      if (j + 1 < n2) pq.push({i, j + 1});
+      if (j + 1 < n2)
+        pq.push({i, j + 1});
     }
 
     return ans;

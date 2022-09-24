@@ -1,6 +1,6 @@
 class Solution {
  public:
-  TreeNode* searchBST(TreeNode* root, int val) {
+  TreeNode *searchBST(TreeNode *root, int val) {
     if (root == nullptr || root->val == val) {
       return root;
     }
