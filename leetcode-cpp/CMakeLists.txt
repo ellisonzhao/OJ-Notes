@@ -39,4 +39,4 @@ add_executable(leetcode_cpp
         num_654/solution.cc
         num_669/solution.cc
         num_700/solution.cc
-        num_701/solution.cc num_0003/solution.cc num_0215/solution.cc num_0215/queue.cc num_0015/solution.cc num_0200/solution.cc)
+        num_701/solution.cc num_0003/solution.cc num_0215/solution.cc num_0215/queue.cc num_0015/solution.cc num_0200/solution.cc num_0402/solution.cc)
