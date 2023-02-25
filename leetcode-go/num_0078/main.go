@@ -45,9 +45,6 @@ func subsets(nums []int) [][]int {
 		dfs func(int, []int)
 	)
 	dfs = func(idx int, tmp []int) {
-		if idx == len(nums)+1 {
-			return
-		}
 		ans = append(ans, append([]int(nil), tmp...))
 		for i := idx; i < len(nums); i++ {
 			tmp = append(tmp, nums[i])
