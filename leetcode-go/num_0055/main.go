@@ -5,11 +5,12 @@ func main() {
 }
 
 func canJump(nums []int) bool {
-	n := len(nums)
-	maxIndex := 0
-	for i := 0; i < n; i++ {
-		if i <= maxIndex {
-			if maxIndex = max(maxIndex, i+nums[i]); maxIndex >= n-1 {
+	var farthestIdx int
+	for i, num := range nums {
+		if i <= farthestIdx {
+			// 遍历每个下标，找能跳到的最远位置
+			farthestIdx = max(farthestIdx, i+num)
+			if farthestIdx >= len(nums)-1 {
 				return true
 			}
 		}
@@ -22,6 +23,5 @@ func max(a, b int) int {
 	if a > b {
 		return a
 	}
-
 	return b
 }
