@@ -16,22 +16,33 @@ func minDistance(word1 string, word2 string) int {
 	if l2 == 0 {
 		return l1
 	}
-
+	// 初始化 dp 数组，word1 前 i 个字符转换成 word2 前 j 个字符所使用的最少操作数
 	dp := make([][]int, l1+1)
 	for i := 0; i <= l1; i++ {
 		dp[i] = make([]int, l2+1)
+		dp[i][0] = i
 	}
-
+	for j := 1; j <= l2; j++ {
+		dp[0][j] = j
+	}
+	// 从头开始计算
 	for i := 1; i <= l1; i++ {
 		for j := 1; j <= l2; j++ {
 			if word1[i-1] == word2[j-1] {
 				dp[i][j] = dp[i-1][j-1]
 			} else {
-				dp[i][j] = 1 + min(dp[i][j-1], min(dp[i-1][j], dp[i-1][j-1]))
+				// 插入一个字符
+				insertOp := 1 + dp[i][j-1]
+				// 删除一个字符
+				deleteOp := 1 + dp[i-1][j]
+				// 替换一个字符
+				replaceOp := 1 + dp[i-1][j-1]
+				dp[i][j] = min(insertOp, min(deleteOp, replaceOp))
 			}
 		}
 	}
 	return dp[l1][l2]
+
 }
 
 func min(a, b int) int {
