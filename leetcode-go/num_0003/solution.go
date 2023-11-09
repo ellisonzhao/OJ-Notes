@@ -1,22 +1,27 @@
 package num_0003
 
 func lengthOfLongestSubstring(s string) int {
-	window := make(map[uint8]int)
-	left, right := 0, 0
-	length, res := 0, 0
-	for right < len(s) {
-		rc := s[right]
-		if window[rc] > 0 && window[rc] >= left {
-			left = window[rc] + 1
-			length = right - left
+	if len(s) == 0 {
+		return 0
+	}
+	charIndexes := make(map[uint8]int)
+	result := 0
+	for start, end := 0, 0; end < len(s); end++ {
+		// 窗口右侧字符已存在
+		if idx, ok := charIndexes[s[end]]; ok {
+			start = max(start, idx+1)
 		}
 
-		window[rc] = right
-		length++
-		right++
-		if length > res {
-			res = length
-		}
+		charIndexes[s[end]] = end
+
+		result = max(result, end-start+1)
 	}
-	return res
+	return result
+}
+
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
 }
