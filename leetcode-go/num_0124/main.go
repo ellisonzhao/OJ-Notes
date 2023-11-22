@@ -2,7 +2,11 @@ package main
 
 import (
 	"math"
+
+	"github.com/ellisonzhao/OJ-Solution/leetcode-go/algorithm"
 )
+
+type TreeNode = algorithm.TreeNode
 
 func maxPathSum(root *TreeNode) int {
 	maxSum := math.MinInt
