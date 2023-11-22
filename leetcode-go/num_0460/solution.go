@@ -64,9 +64,9 @@ lfu.get(4);      // 返回 4
 */
 
 type LFUCache struct {
-	capacity, size, minFreq int
-	cache                   map[int]*Node
-	frequencies             map[int]*DoublyLinkedList
+	capacity, minFreq int
+	cache             map[int]*Node
+	frequencies       map[int]*DoublyLinkedList
 }
 
 type Node struct {
@@ -87,6 +87,9 @@ func NewDoublyLinkedList() *DoublyLinkedList {
 }
 
 func (l *DoublyLinkedList) addToHead(node *Node) {
+	if node == nil {
+		return
+	}
 	firstNode := l.head.next
 	l.head.next = node
 	node.prev = l.head
@@ -95,6 +98,9 @@ func (l *DoublyLinkedList) addToHead(node *Node) {
 }
 
 func (l *DoublyLinkedList) delete(node *Node) {
+	if node == nil {
+		return
+	}
 	node.next.prev = node.prev
 	node.prev.next = node.next
 }
@@ -107,7 +113,6 @@ func (l *DoublyLinkedList) removeFromTail() *Node {
 	if l.isEmpty() {
 		return nil
 	}
-
 	node := l.tail.prev
 	l.delete(node)
 	return node
@@ -116,7 +121,7 @@ func (l *DoublyLinkedList) removeFromTail() *Node {
 func Constructor(capacity int) LFUCache {
 	cache := make(map[int]*Node)
 	freq := make(map[int]*DoublyLinkedList)
-	return LFUCache{capacity, 0, 0, cache, freq}
+	return LFUCache{capacity, 0, cache, freq}
 }
 
 func (c *LFUCache) Get(key int) int {
@@ -132,12 +137,11 @@ func (c *LFUCache) Get(key int) int {
 
 // 插入新结点或访问已有结点时，访问频次更新
 func (c *LFUCache) update(node *Node) {
-	oldFreq := node.freq
 	// 当前访问频次对应的链表需要删除该结点
 	if oldList, ok := c.frequencies[node.freq]; ok {
 		oldList.delete(node)
 		// 更新最小访问频次
-		if c.minFreq == oldFreq && oldList.isEmpty() {
+		if c.minFreq == node.freq && oldList.isEmpty() {
 			c.minFreq++
 		}
 	}
@@ -152,9 +156,6 @@ func (c *LFUCache) update(node *Node) {
 }
 
 func (c *LFUCache) Put(key int, value int) {
-	if c.capacity == 0 {
-		return
-	}
 	node, ok := c.cache[key]
 	// 节点已存在只需要更新值和访问频次链表
 	if ok {
@@ -163,12 +164,11 @@ func (c *LFUCache) Put(key int, value int) {
 		return
 	}
 	// 节点不存在可能需要新建链表
-	if c.size == c.capacity {
+	if len(c.cache) == c.capacity {
 		// 移除最不经常访问的节点
 		if list, ok := c.frequencies[c.minFreq]; ok {
 			oldNode := list.removeFromTail()
 			delete(c.cache, oldNode.key)
-			c.size--
 		}
 	}
 	newNode := &Node{key, value, 1, nil, nil}
@@ -179,7 +179,6 @@ func (c *LFUCache) Put(key int, value int) {
 	}
 	newList.addToHead(newNode)
 	c.cache[key] = newNode
-	c.size++
 	c.minFreq = newNode.freq
 }
 
