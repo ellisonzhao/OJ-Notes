@@ -29,23 +29,25 @@ import (
 func subsetsWithDup(nums []int) [][]int {
 	sort.Ints(nums)
 	var (
-		tmp []int
 		ans [][]int
-		dfs func(idx int, choosePre bool)
+		dfs func(subset []int, idx int)
 	)
-	dfs = func(idx int, choosePre bool) {
+	dfs = func(subset []int, idx int) {
 		if idx == len(nums) {
-			ans = append(ans, append([]int(nil), tmp...))
+			ans = append(ans, append([]int(nil), subset...))
 			return
 		}
-		dfs(idx+1, false)
-		if !choosePre && idx > 0 && nums[idx-1] == nums[idx] {
-			return
+		// 添加当前元素
+		subset = append(subset, nums[idx])
+		dfs(subset, idx+1)
+		// 不添加当前元素，需要跳过重复
+		subset = subset[:len(subset)-1]
+		for idx < len(nums)-1 && nums[idx] == nums[idx+1] {
+			idx++
 		}
-		tmp = append(tmp, nums[idx])
-		dfs(idx+1, true)
-		tmp = tmp[:len(tmp)-1]
+		dfs(subset, idx+1)
 	}
-	dfs(0, false)
+	dfs([]int(nil), 0)
+
 	return ans
 }
