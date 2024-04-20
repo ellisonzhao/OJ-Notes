@@ -12,4 +12,4 @@ jobs:
       - uses: ellisonzhao/OJ-Notes@mater
         with:
           email: ${{ secrets.CC_EMAIL }}
-          passwd: ${{ secrets.CC_PASSWD }}
+          passwd: ${{ secrets.CC_PASSWORD }}
