@@ -9,7 +9,7 @@ jobs:
   checkin:
     runs-on: ubuntu-latest
     steps:
-      - uses: ellisonzhao/OJ-Notes@main
+      - uses: yanglbme/cordcloud-action@main
         with:
           email: ${{ secrets.CC_EMAIL }}
           passwd: ${{ secrets.CC_PASSWORD }}
